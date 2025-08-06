@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    body {
+        font-family: cursive;
+        background-image: url('images/bugati.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .conatiner {
+        border-radius: 50px;
+        background-color: rgba(110, 115, 135, 0.2);
+        backdrop-filter: blur(2px);
+        color: white;
+        width: 40%;
+        margin: 60px;
+        font-size: large;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    form .order {
+        display: block;
+        font-size: 25px;
+        color: #ffffff;
+    }
+
+    form input {
+        width: 350px;
+        height: 30px;
+        border-radius: 10px;
+        font-size: 15px;
+        border: 3px solid black;
+        margin-bottom: 20px;
+        caret-color: #0202ff;
+        border: 3px solid #0202ff;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 45px;
+        text-shadow: 5px 7px 10px rgba(53, 3, 255, 0.892);
+        color: #ffffff;
+    }
+
+    input::placeholder {
+        font-size: larger;
+        color: rgb(0, 0, 0);
+        padding-left: 40px;
+    }
+
+    button {
+        width: 180px;
+        height: 50px;
+        border: none;
+        background-color: #04044f;
+        color: rgb(255, 255, 255);
+        border-radius: 40px;
+        font-size: 23px;
+        letter-spacing: 2px;
+        margin: 10px 0px;
+    }
+</style>
+
+<body>
+    <div class="conatiner">
+        <h1> Login Form </h1>
+        <form>
+            <label for="name" class="order"> Name :</label>
+            <input type="text" placeholder="Enter name here" />
+
+            <label for="email" class="order"> Email :</label>
+            <input type="email" placeholder="Enter email here" />
+
+            <label for="password" class="order"> Password :</label>
+            <input type="password" placeholder="Enter password here" />
+
+            <label for="number" class="order"> Phone :</label>
+            <input type="number" placeholder="Enter number here" />
+            <br>
+            <button>Login</button>
+        </form>
+    </div>
+</body>
+
+</html>
